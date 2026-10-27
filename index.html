@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ТОВ «РЕЗЕМПЛЕНС ПІКЧЕРЗ» — Цифрова Візитка</title>
+    <title>ТОВ «РЕЗЕМБЛЕНС ПІКЧЕРЗ» — Цифрова Візитка</title>
     <!-- Підключення надійної бібліотеки QR-кодів -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <style>
@@ -315,7 +315,7 @@
         </div>
 
         <h1>Resemblance Pictures</h1>
-        <div class="subtitle">ТОВ «РЕЗЕМЛЕНС ПІКЧЕРЗ»</div>
+        <div class="subtitle">ТОВ «РЕЗЕМБЛЕНС ПІКЧЕРЗ»</div>
 
         <div class="links-list">
             <!-- Телефон -->
@@ -364,7 +364,7 @@
         </div>
 
         <div class="footer">
-            © ТОВ «РЕЗЕМЛЕНС ПІКЧЕРЗ»
+            © ТОВ «РЕЗЕМБЛЕНС ПІКЧЕРЗ»
         </div>
     </div>
 
@@ -383,7 +383,6 @@
     <script>
         const CARD_URL = "https://res-pictures.github.io/res-pictures/";
 
-        // Генерація справжнього QR-коду
         window.addEventListener('DOMContentLoaded', () => {
             new QRCode(document.getElementById("qrcode"), {
                 text: CARD_URL,
@@ -411,8 +410,8 @@
             if (navigator.share) {
                 try {
                     await navigator.share({
-                        title: 'ТОВ «РЕЗЕМЛЕНС ПІКЧЕРЗ»',
-                        text: 'Цифрова візитка ТОВ «РЕЗЕМЛЕНС ПІКЧЕРЗ»',
+                        title: 'ТОВ «РЕЗЕМБЛЕНС ПІКЧЕРЗ»',
+                        text: 'Цифрова візитка ТОВ «РЕЗЕМБЛЕНС ПІКЧЕРЗ»',
                         url: CARD_URL
                     });
                 } catch (err) {}
